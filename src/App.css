@@ -1,0 +1,491 @@
+*, *::after, *::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+.HomePage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#13C4A3, #6A7FDB);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.homepage-image-text {
+  padding: 7vh;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.homepage-image-text > img {
+  width: 70%;
+  margin: 30px;
+  animation: appears 6s;
+}
+
+#re{
+  animation: appears 4s;
+  font-size: 4vh;
+}
+
+#connect {
+  animation: appears 2s;
+  font-size: 4vh;
+}
+
+ @keyframes appears {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+    }
+ }
+
+
+form > button, .HomePage > button  {
+   background-color: #D1E3DD;
+   font-size: 2.5vh;
+   font-family: 'Poppins', sans-serif;
+   border-radius: 10px;
+   padding: 3%;
+   width: 70vw;
+   margin: 10px;
+   cursor: pointer!important;
+ }
+
+/* REGISTER FORM & WELCOME PAGE*/
+
+.userForm {
+  height: 100vh;
+  background-image: linear-gradient(#13C4A3, #6A7FDB);
+}
+
+.userForm > form {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  justify-content: center;
+  align-items: center;
+}
+
+form > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  padding-top: 10vh;
+}
+
+#error {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  width: 70vw;
+  border-radius: 10px;
+  height: 6vh;
+  background-color: inherit;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form > label {
+  align-self: flex-start;
+  padding-left: 14vh;
+  padding-top: 2vh;
+  margin-top: 5vh;
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+#submitForm {
+  margin-top: 8vh;
+}
+
+
+/* -------------------- */
+
+.HeaderMobile {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 4vh 2vh;
+  flex-wrap: wrap;
+}
+
+.UserHeader {
+  margin-bottom: 4vh;
+}
+
+.HeaderMobile > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+.menu > img {
+  width: 7vw;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  align-self: flex-end;
+  background-color: black !important;
+  width: 38vw;
+  height: 10vh;
+  float:right;
+  padding: 4vw;
+  margin-right: 3vh;
+  overflow-y: scroll;
+}
+
+.dropdown-menu > p {
+  margin-bottom: 3vh;
+}
+
+.dropdown-menu > p > a {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+.menu {
+  border: none;
+  background: none;
+  width: inherit;
+  padding: 0;
+  margin: 5px;
+}
+
+/* --------------------------- */
+.UserProfile {
+  background-image: linear-gradient(#13C4A3, #6A7FDB);
+  height: 100vh;
+}
+
+.appointment-card {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4.5vh 1vh;
+  border-radius: 8px;
+}
+
+.doctor-info {
+  width: 100%;
+  min-width: fit-content;
+}
+
+.doctor-info > p {
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+.appointment-card > button {
+  background-color: inherit;
+  border: none;
+}
+
+ #therapist-icon {
+  border-radius: 50%;
+  height: 15vh;
+  weight: 15vw;
+  margin: 15px;
+}
+
+.appt-settings {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3vh;
+}
+
+.cancel-app-button > img, .reschedule-app-button > img {
+  height: 4vh;
+  margin-top: 1rem;
+}
+
+.AppointmentList > p {
+  padding-top: 7vh;
+  text-align: center;
+
+}
+/* ------------------------ */
+/*
+
+
+/* THERAPIST LIST */
+ .TherapistListClass {
+   background-image: linear-gradient(#13C4A3, #6A7FDB);
+   height: 100vh;
+   overflow: scroll;
+ }
+
+.therapist-info {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.therapist-info > p {
+  font-size: .8rem;
+  padding: .3rem;
+}
+
+.therapist-info > p > span {
+  padding-left: .4rem;
+}
+
+.therapistList {
+  height: 100vh;
+  background-color: inherit;
+}
+
+/* THERAPIST PROFILE */
+
+.therapist-header {
+  padding-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255,255,255, 0) 55%, rgba(255,255,255, 1) 60%);
+}
+
+.therapist-header > button {
+  border: 1px solid #13C4A3;
+  margin-top: 1rem;
+  background-color: inherit;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.therapist-header > img {
+  width: 25vh;
+  border-radius: 50%;
+}
+
+.therapist-info {
+  background-color: white;
+  height: auto;
+}
+.location-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: .7rem;
+}
+
+.location-info > img {
+  width: 1rem;
+}
+
+.timefield {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 5vh;
+}
+
+.timefield > button {
+  margin: 3vh;
+  border: 1px solid #13C4A3;
+  margin-top: 1rem;
+  background-color: white;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.react-calendar {
+  width: 100%!important;
+}
+
+.TherapistProfile {
+  background-image: linear-gradient(#13C4A3, #6A7FDB);
+}
+/* ------------ */
+
+
+
+
+/* ----------------TABLET ------------------------ */
+
+@media screen and (min-width: 768px) {
+  .HomePageContents {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* background-color: red;
+    width: 50vw; */
+  }
+
+  .HomePage {
+    width: 40vw;
+  }
+
+  input {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 40vw;
+    height: auto;
+  }
+
+  form > button {
+  }
+
+  /* .HomePage > button {
+    display: none;
+  } */
+
+  .homepage-image-text {
+    padding: 0;
+  }
+
+  .userForm > form > label {
+    color: black;
+    padding-left: 2vh;
+    padding-top: 0;
+  }
+
+  #submitForm {
+    margin-top: 4vh;
+    font-size: 2vh;
+    width: 15vh;
+  }
+
+  .userForm {
+    background-image: none;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #renderForm {
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid white;
+    font-size: 2.5vw;
+    width: 34vw;
+    height: 9.8vw;
+    margin-top: 6vh;
+    /* font-weight: 600; */
+    text-shadow: .5px .5px black;
+  }
+
+  #renderForm:active{
+    background-color: rgba(255, 255, 255, .9);
+  }
+
+  /* -----user profile------- */
+
+  .UserProfile {
+    font-size: 2.4vh;
+  }
+
+  .AppointmentList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: inherit;
+    /* background-image: linear-gradient(#13C4A3, #6A7FDB); */
+  }
+
+  .doctor-info {
+    width: 45%;
+  }
+
+  .appointment-card {
+    width: 90vw;
+  }
+
+  .doctor-info > p {
+    font-size: 2vh;
+  }
+
+  nav {
+    display: flex;
+    background-color: white;
+    height: 15vh;
+    font-size: 2vh;
+    justify-content: flex-end;
+    margin-bottom: 6rem;
+    padding-right: 1rem;
+  }
+
+  .nav-icons > a {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-icons > a > img {
+    width: 3rem;
+  }
+
+  .AppointmentList > section > p {
+    font-size: 3vh;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  .therapist-header {
+    font-size: 3vh;
+    letter-spacing: 2px;
+  }
+  .location-info, .therapist-info > p  {
+    font-size: 2vh;
+    letter-spacing: 2px;
+  }
+
+  .therapist-info {
+    font-size: 4vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ */
