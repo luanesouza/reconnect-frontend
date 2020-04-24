@@ -23,8 +23,6 @@
 /config/master.key
 /node_modules
 .env
-.gitignore
-.git
 
 # Local Netlify folder
-.netlify.git
+.netlify

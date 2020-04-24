@@ -1,6 +1,7 @@
 import axios from 'axios';
 // import { api, updateToken } from './api-helper';
-const BASE_URL = 'http://localhost:3000'
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://dry-oasis-20600.herokuapp.com'
 
 const loginUser = async (data) => {
   try {
